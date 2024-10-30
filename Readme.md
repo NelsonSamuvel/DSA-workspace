@@ -2,11 +2,13 @@
 
 ## What is Data structure?
 
-Data structure are a specific way of organizing, storing and accessing the data.
+Data structure is a specific way of organizing, storing and accessing the data.
 
 ## Algorithm
 
 A step by step solution to solve the problem
+
+### Example
 
 ```javascript
 const students = ["John", "Nick", "Tom", "Peter", "Clint"];
@@ -115,3 +117,27 @@ getPairs(nums);
 - nested for loop takes O(n^2) and single for loop takes O(n) which results in O(n^2 + n).
 - In case of Big O, we ignore non dominant term.
 - The result is O(n^2) which is a dominant term and we ignored O(n).
+
+
+### O(log n)
+
+It refers to the time complexity that increases logarithmically relative to the input size. That means, as input size increases, the execution time also increases but slowly.
+
+#### Example
+
+```javascript
+[1,2,3,4,5,6,7,8];
+
+//using divide and conquer
+
+1,2,3,4 | 5,6,7,8
+1,2 | 3,4
+1,2
+
+```
+In this example, as the input size increases, we are only checking half of the size of array.
+Later, we learn about divide and conquer and how O(log n) works.
+
+## Arrays
+
+Array is a data structure that stores collection of elements. Those elements can be accessed by using the index.
