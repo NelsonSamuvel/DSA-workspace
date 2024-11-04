@@ -118,7 +118,6 @@ getPairs(nums);
 - In case of Big O, we ignore non dominant term.
 - The result is O(n^2) which is a dominant term and we ignored O(n).
 
-
 ### O(log n)
 
 It refers to the time complexity that increases logarithmically relative to the input size. That means, as input size increases, the execution time also increases but slowly.
@@ -126,18 +125,24 @@ It refers to the time complexity that increases logarithmically relative to the 
 #### Example
 
 ```javascript
-[1,2,3,4,5,6,7,8];
+[1, 2, 3, 4, 5, 6, 7, 8];
 
 //using divide and conquer
 
-1,2,3,4 | 5,6,7,8
-1,2 | 3,4
-1,2
-
+1, 2, 3, 4 | 5, 6, 7, 8;
+1, 2 | 3, 4;
+1, 2;
 ```
+
 In this example, as the input size increases, we are only checking half of the size of array.
 Later, we learn about divide and conquer and how O(log n) works.
 
 ## Arrays
 
 Array is a data structure that stores collection of elements. Those elements can be accessed by using the index.
+
+## Linked Lists
+
+- It is a linear data structure where elements are called `nodes`, not stored in memory consecutively.
+- Each node has a element and reference to the next node
+- First node is called head and the last node is called tail
